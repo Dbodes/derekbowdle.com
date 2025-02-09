@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 const whitePapers = [
+  { title: "Star GAN", file: "/pdfs/Image Translation for Time of Day Lighting Correction Using StarGAN.pdf" },
   { title: "Healthcare", file: "/pdfs/HEALTHCARE CASE STANDARDS-BASED APPROACH TO CYBERSECURITY.pdf" },
 ];
 

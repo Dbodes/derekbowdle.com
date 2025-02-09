@@ -2,16 +2,12 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(req: Request) {
-  console.log("POST: here");
   try {
     const { name, email, message } = await req.json();
 
     if (!name || !email || !message) {
       return NextResponse.json({ error: "All fields are required." }, { status: 400 });
     }
-    console.log(name);
-    console.log(email);
-    console.log(message);
     
     // Set up nodemailer (replace with your EmailJS or SMTP credentials)
     const transporter = nodemailer.createTransport({
@@ -32,7 +28,7 @@ export async function POST(req: Request) {
     await transporter.sendMail(mailOptions);
 
     return NextResponse.json({ success: "Message sent successfully!" }, { status: 200 });
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: "Failed to send message." }, { status: 500 });
   }
 }

@@ -18,6 +18,11 @@ export default function Home() {
                 Quantum Hitting Times
               </Link>
             </li>
+            <li>
+              <Link href="/projects/hilbert" className="block p-2 hover:bg-gray-700 rounded">
+                Audio to Image
+              </Link>
+            </li>
           </ul>
       </div>
     </main>

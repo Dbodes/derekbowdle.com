@@ -20,6 +20,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en" className="dark">
       <body className={`${manrope.variable} font-sans bg-gray-900 text-white`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );

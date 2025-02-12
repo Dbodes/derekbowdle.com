@@ -20,6 +20,7 @@ export default function Home() {
             </li>
             <li>
               <Link href="/projects/hilbert" className="block p-2 hover:bg-gray-700 rounded">
+                **UNDER CONSTRUCTION** 
                 Audio to Image
               </Link>
             </li>

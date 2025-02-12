@@ -13,7 +13,7 @@ export default function Home() {
         if (!response.ok) throw new Error('Failed to fetch IP');
         const data = await response.json();
         setIp(data.ip);
-      } catch (err) {
+      } catch {
         setError('Error fetching IP');
       }
     };

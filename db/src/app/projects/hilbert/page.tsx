@@ -9,7 +9,7 @@ const presetFiles = ['/audio/I_Wanna_Be_Sedated.mp3', '/audio/Just_Another_Girl.
 export default function WaveformUploader() {
   const fileInputRef = useRef<HTMLInputElement | null>(null);
   const { waveformImage, hilbertImage, totalValues, processAudio, audioUrl, audioRef, currentAmplitude } = useWaveform();
-  const [selectedFile, setSelectedFile] = useState<string | null>(null);
+  const [ selectedFile, setSelectedFile] = useState<string | null>(null);
 
   const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];

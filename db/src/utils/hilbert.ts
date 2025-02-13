@@ -17,8 +17,8 @@ export function hilbertCurveTransform(data: number[]): number[][] {
   function d2xy(n: number, d: number) {
     let x = 0, y = 0, t = d;
     for (let s = 1; s < n; s *= 2) {
-      let rx = 1 & (t / 2);
-      let ry = 1 & (t ^ rx);
+      const rx = 1 & (t / 2);
+      const ry = 1 & (t ^ rx);
       [x, y] = rot(s, x, y, rx, ry);
       x += s * rx;
       y += s * ry;

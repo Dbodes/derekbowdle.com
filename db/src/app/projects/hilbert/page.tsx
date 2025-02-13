@@ -3,6 +3,7 @@
 import { useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { useWaveform } from '@/hooks/useWaveform';
+import Image from 'next/image';
 
 const presetFiles = ['/audio/I_Wanna_Be_Sedated.mp3', '/audio/Just_Another_Girl.mp3', '/audio/Lie_Cheat_Steal.mp3'];
 
@@ -50,8 +51,8 @@ export default function WaveformUploader() {
       )}
       <div className="mt-4 w-24 bg-blue-500 transition-all" style={{ height: `${currentAmplitude}px` }}></div>
       <p>Current Amplitude: {currentAmplitude}</p>
-      {waveformImage && <img src={waveformImage} alt="Waveform" className="mt-4 border rounded-lg w-96 h-48" />}
-      {hilbertImage && <img src={hilbertImage} alt="Hilbert Curve" className="mt-4 border rounded-lg w-96 h-96" />}
+      {waveformImage && <Image src={waveformImage} alt="Waveform" className="mt-4 border rounded-lg w-96 h-48" />}
+      {hilbertImage && <Image src={hilbertImage} alt="Hilbert Curve" className="mt-4 border rounded-lg w-96 h-96" />}
     </div>
   );
 }

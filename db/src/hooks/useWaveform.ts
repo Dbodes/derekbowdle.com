@@ -1,6 +1,6 @@
 // hooks/useWaveform.ts
 import { useState, useRef, useEffect } from 'react';
-import WaveSurfer from 'wavesurfer.js';
+//import WaveSurfer from 'wavesurfer.js';
 import { hilbertCurveTransform } from '@/utils/hilbert';
 import { generateHilbertImage } from '@/utils/imageUtils';
 

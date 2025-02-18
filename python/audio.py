@@ -105,5 +105,8 @@ class AudioVisualizer:
             pygame.quit()
 
 if __name__ == "__main__":
-    visualizer = AudioVisualizer(r"C:\Users\dkbow\GIT\derekbowdle.com\db\public\audio\Lie_Cheat_Steal.mp3")
-    visualizer.run()
+    filename = r"C:\Users\dkbow\GIT\derekbowdle.com\db\public\audio\Lie_Cheat_Steal.mp3"
+    wf = wave.open(filename, 'rb')
+    
+    #visualizer = AudioVisualizer()
+    #visualizer.run()

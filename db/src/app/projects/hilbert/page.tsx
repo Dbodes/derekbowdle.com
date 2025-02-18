@@ -51,7 +51,6 @@ export default function WaveformUploader() {
       )}
       <div className="mt-4 w-24 bg-blue-500 transition-all" style={{ height: `${currentAmplitude}px` }}></div>
       <p>Current Amplitude: {currentAmplitude}</p>
-      {waveformImage && <Image src={waveformImage} alt="Waveform" className="mt-4 border rounded-lg w-96 h-48" />}
       {hilbertImage && <Image src={hilbertImage} alt="Hilbert Curve" className="mt-4 border rounded-lg w-96 h-96" />}
     </div>
   );
